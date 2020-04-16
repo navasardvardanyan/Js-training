@@ -99,8 +99,9 @@ function indexOfSecondMaxElement(arr) {
         if(arr[i] < arr[maxIndex] && arr[i] > arr[secMaxIndex]) {
             secMaxIndex = i;
         }
-        return secMaxIndex;
+        
     }
+    return secMaxIndex;
 }
 
 

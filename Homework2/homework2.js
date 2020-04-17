@@ -104,6 +104,30 @@ function indexOfSecondMaxElement(arr) {
     return secMaxIndex;
 }
 
+// Problem 11.
+
+
+function padding(array, padAmount, repeat) {
+    if (padAmount > array.length) {
+        return "'Invalid padding amount'";
+    }
+    let resArr = [];
+    for (let i = 0; i < repeat; i++) {
+        for (let j = 0; j < padAmount; j++) {
+            resArr.push(array[j]);
+        }
+    }
+    for (let i = 0; i < array.length; i++) {
+        resArr.push(array[i]);
+    }
+    for (let i = 0; i < repeat; i++) {
+        for(let j = array.length - padAmount; j < array.length; j++) {
+            resArr.push(array[j]);
+        }
+    }
+    return resArr; 
+}
+
 
 
 

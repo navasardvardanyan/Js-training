@@ -9,7 +9,6 @@ function binarySearch(array, n) {
         } else lastIndex = Math.floor((lastIndex + startIndex)/2);
     }    
     return startIndex;
-
 }
 
 
